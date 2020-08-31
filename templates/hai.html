@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/yellow.css' %}"
+</head>
+<body>
+    <h1>Demonstration of for loop with jinja operational tag</h1>
+    <h3>priniting entire string</h3>
+    <h1>{{name}}</h1>
+    <h2>now here iam printing indiviual characters</h2>
+    
+    {% if a %}
+    {% for var in name %}
+    <h1>{{var}}</h1>
+    {% endfor %}
+    {% endif %}
+<img src="{% static 'images/PRABHAS.jpg' %}" alt="no image">
+
+</body>
+</html>
